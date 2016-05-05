@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop Online</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/header'%>
+<div class="container">
+  <div id="wrapper-page">
+    <div id="nav-subnav" class="" data-category="books" data-digest="VStMrdAv70kTQdwRAn4epbFap0U">
+      <a href="#" class="nav-a nav-b"<span class="nav-a-content">Books</span></a> 
+      <a href="#" class="nav-a"><span class="nav-a-content">Advanced Search</span></a> 
+      <a href="#" class="nav-a"><span class="nav-a-content">New Releases</span></a> 
+      <a href="#" class="nav-a"><span class="nav-a-content">Best Sellers</span></a>
+      <a href="#" class="nav-a"><span class="nav-a-content">The New York Times Best Sellers</span></a> 
+      <a href="#" class="nav-a"><span class="nav-a-content">Children's Books</span></a> 
+      <a href="#" class="nav-a"><span class="nav-a-content">Textbooks</span></a> 
+    </div>
+    <p class="notice"><%= notice %></p>
+    <%= yield %>
+  </div>
+</div>
+</body>
+</html>

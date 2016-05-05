@@ -1,0 +1,48 @@
+{:uriI"“file://app/assets/bower_components/metisMenu/package.json?type=application/json&id=434c4af9aba5503f4a1e5ad781434ec468660050f41ef524094edb500a9a2a80:ET:load_pathI" app/assets/bower_components;T:filenameI"7app/assets/bower_components/metisMenu/package.json;T:	nameI"metisMenu/package;T:logical_pathI"metisMenu/package.json;T:content_typeI"application/json;T:sourceI"¢{
+  "name": "metismenu",
+  "version": "1.1.3",
+  "description": "Easy menu jQuery plugin for Twitter Bootstrap 3",
+  "main": "./dist/metisMenu.js",
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onokumus/metisMenu.git"
+  },
+  "keywords": [
+    "twitter",
+    "bootstrap",
+    "twbs",
+    "jquery",
+    "menu",
+    "accordion",
+    "toggle",
+    "metis",
+    "metisMenu"
+  ],
+  "author": {
+    "name": "Osman Nuri Okumus",
+    "email": "onokumus@gmail.com",
+    "url": " http://onokumus.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onokumus/metisMenu/issues"
+  },
+  "homepage": "https://github.com/onokumus/metisMenu",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Efile-digest://app/assets/bower_components/metisMenu/package.json;TT:charsetI"
+utf-8;F:digest"%%+
+âh‹Éÿ“ÚEiÏÖd¥žÉŽIÉ›tŠEºl9•‹ð:lengthi¢:dependencies_digest"%ôLzV–
+­éEûXvû„Í¯×"ÊLéê:idI"E434c4af9aba5503f4a1e5ad781434ec468660050f41ef524094edb500a9a2a80;F:
+mtimel+¦ïYV

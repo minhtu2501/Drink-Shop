@@ -1,0 +1,41 @@
+<h1>Shopping Cart</h1>
+
+<table id="cart" class="table table-striped">
+  <tr>
+    <th>Product</th>
+    <th>Category</th>
+    <th>Quantity</th>
+    <th class="price">Unit Price</th>
+    <th class="price">Full Price</th>
+    <th>Action</th>
+  </tr>
+  <% if @cart.order_items.present? %>
+  <% @cart.order_items.each do |order_item | %>
+    <tr class="<%= cycle :odd, :even %>">
+      <td><%= order_item.product.name %></td>
+      <td><%= order_item.product.category.name %></td>
+      <td class="qty"><%= order_item.quantity %></td>
+      <td class="price"><%= number_to_currency(order_item.unit_price) %></td>
+      <td class="price"><%= number_to_currency(order_item.full_price) %></td>
+      <td><%= link_to 'Remove', order_item, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td class="total price" colspan="4">
+      Total: <%= number_to_currency @cart.total_price %>
+    </td>
+  </tr>
+     
+   <% item = @cart.order_items.last %>
+   <% id = item.product.id %>
+   <% product = Product.find(id) %>
+   <% id_cat = product.category.id %> 
+    
+  <tr>
+    <td>
+        <%= link_to "Back", admin_category_path(id_cat), class: 'btn btn-info' %> <%= link_to "Order", new_admin_order_path, class: 'btn btn-info' %>
+    </td>
+  </tr>
+  <% end %>
+</table>
+    

@@ -1,0 +1,15 @@
+<div class="shopping-cart">
+  <h1>Shopping Cart</h1>
+  <% if @order_items.present? %>
+    <% @order_items.each do |order_item| %>
+      <%= render 'carts/cart_order_items', product: order_item.product, order_item: order_item %>
+    <% end %>
+      <h4 class="text-left">Total Price: <span style="color: green"><%= number_to_currency @cart.total_price %></span></h4>
+       <%= link_to "Go To Shop", '/', class: 'btn btn-info' %>
+       <%= link_to "Check Out!", new_order_path, class: 'btn btn-info' %>
+  <% else %>
+  <p>Item not available.</p>
+    <%= link_to "Go To Shop", '/', class: 'btn btn-info' %>
+  <% end %>
+</div>
+    

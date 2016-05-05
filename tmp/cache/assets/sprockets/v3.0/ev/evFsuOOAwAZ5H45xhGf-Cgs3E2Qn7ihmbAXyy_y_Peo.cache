@@ -1,0 +1,47 @@
+{:uriI"ífile://app/assets/bower_components/holderjs/package.json?type=application/json&id=63cca3dbb8db9395a9f8a82faa23a6cb53ae56fabd9219a094d85f02a1caaa44:ET:load_pathI" app/assets/bower_components;T:filenameI"6app/assets/bower_components/holderjs/package.json;T:	nameI"holderjs/package;T:logical_pathI"holderjs/package.json;T:content_typeI"application/json;T:sourceI"Æ{
+  "name": "Holder",
+  "version": "2.4.1",
+  "summary": "client side image placeholders",
+  "description": "Holder uses SVG to render image placeholders entirely in browser.",
+  "author": {
+    "name": "Ivan Malopinsky",
+    "url": "http://imsky.co"
+  },
+  "homepage": "http://imsky.github.io/holder",
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "keywords": [
+    "images",
+    "placeholders",
+    "client-side",
+    "canvas",
+    "generation",
+    "development",
+    "svg"
+  ],
+  "main": "holder.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imsky/holder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imsky/holder/issues"
+  },
+  "devDependencies": {
+    "moment": "^2.6.0",
+    "gulp": "~3",
+    "gulp-uglify": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-header": "^1.0.2",
+    "gulp-jshint": "^1.6.1",
+    "gulp-todo": "^0.3.8",
+    "gulp-util": "~3"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Dfile-digest://app/assets/bower_components/holderjs/package.json;TT:charsetI"
+utf-8;F:digest"%V“ß`ÔÄjçç¢\˚““W©õ@∏ÂÇTıú•g:lengthiÆ:dependencies_digest"%M∞4rˆNè÷Rµ"⁄ÜRÖÒ»ÿ-12l ·KjÕa:idI"E63cca3dbb8db9395a9f8a82faa23a6cb53ae56fabd9219a094d85f02a1caaa44;F:
+mtimel+¶ÔYV

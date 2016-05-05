@@ -1,0 +1,28 @@
+
+
+<h1>Listing Products</h1>
+
+</div>
+<ul id="product_list">
+  <% @products.each do |product|%>
+  <li>
+    <a href="/products/1"><img alt="Product1" src="/assets/product1-6148f37394cc0da97a03d33cf733edbd.jpg"></a>
+    <h4><a class="title" href="/products/1"><%= product.name %></a></h4>
+    <p><%= product.description %></p>
+    <p><%= product.number %></p>
+    <span><%= product.price %></span>
+    <% if current_user %>
+      Visual Effects: <%= rating_for product, "visual_effects" %>
+      <br />
+    <% end %>
+    <a href="/cart/1" class="add">Add to cart</a>
+  </li>
+  <% end %>
+</ul>
+</div>
+
+<br>
+<% if can? :create, Product %>
+<%= link_to 'New Product', new_product_path %>
+<% end %>
+<%= will_paginate %>

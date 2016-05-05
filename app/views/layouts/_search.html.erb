@@ -1,0 +1,18 @@
+<div class="search-box clearfix">
+<form action="<%= products_path %>" class="search-form clearfix" method="get">
+<div class="input-search-text">
+<input class="search-text" maxlength="255" name="q" onblur="if (this.value == '') this.value = this.defaultValue;" onfocus="if (this.value == this.defaultValue)  this.value = '';" type="text" />
+</div>
+<div class="input-search-submit">
+<input class="search-submit" name="submit" type="submit" value="Search" />
+</div>
+</form>
+<ul>
+	<% @categories= Category.all%>
+	<%@categories.each do |categories|%>
+	<div class="search_tagkey">
+	<li><%= link_to "#{categories.name}", category_path(categories.id) %></li>
+	</div>
+<% end %>
+</ul>
+</div>

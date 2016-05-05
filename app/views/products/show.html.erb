@@ -1,0 +1,20 @@
+<div id="show_product" style="margin-bottom: 500px;">
+<p id="notice"></p>
+  <h1><%= @product.name %></h1>
+  
+  <%= image_tag @product.picture.url, size: "100x100", id:"main_img" %>
+
+  <div id="show_content">
+    <p><strong>Description: </strong><br><%= @product.description %></p>
+    <p><strong>Category:</strong><%= @product.category.name %></p>
+    <p><strong>Number:</strong><%= @product.number %></p><br>
+    <p><strong>Price: </strong><%= @product.price %></p>
+    
+    Visual Effects: <%= rating_for @product, "visual_effects" %>
+    <br />
+    <a href="/cart/1" class="add">Add to cart</a>
+   
+  </div><br><br>
+  <div style="width: 50%; float: left; height: 40px; margin: 40px 0 0 0;">
+
+<a class="add" href="/products" style="float: left; background: blue; color: #fff;">Back</a></div>

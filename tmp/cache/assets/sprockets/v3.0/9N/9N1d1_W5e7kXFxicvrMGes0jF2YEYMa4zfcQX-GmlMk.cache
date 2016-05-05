@@ -1,0 +1,16 @@
+{:uriI"éfile://app/assets/bower_components/flot/package.json?type=application/json&id=f6ef71260bf8eff3ac06c9096c02d6df01b02bf14697d4419089a6f800764412:ET:load_pathI" app/assets/bower_components;T:filenameI"2app/assets/bower_components/flot/package.json;T:	nameI"flot/package;T:logical_pathI"flot/package.json;T:content_typeI"application/json;T:sourceI"ö{
+	"name": "Flot",
+	"version": "0.8.3",
+	"main": "jquery.flot.js",
+	"scripts": {
+		"test": "make test"
+	},
+	"devDependencies": {
+		"jshint": "0.9.1"
+	}
+}
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"@file-digest://app/assets/bower_components/flot/package.json;TT:charsetI"
+utf-8;F:digest"%˝Æy¡§P$ÊŒ‡KÂú+=∏õ¨¬Ø0Xõ|”c:lengthiö:dependencies_digest"%ÇCìf‚Q+'|J–üëpU,=0æ`!oùG1&?€:idI"Ef6ef71260bf8eff3ac06c9096c02d6df01b02bf14697d4419089a6f800764412;F:
+mtimel+¶ÔYV

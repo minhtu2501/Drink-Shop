@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <p>
+      <strong>ID Cart:</strong>
+      <%= @order.cart_id %>
+    </p>
+    <p>
+      <strong>Custome name:</strong>
+      <%= @order.custome_name %>
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <%= @order.email %>
+    </p>
+    <p>
+      <strong>Mobile:</strong>
+      <%= @order.mobile %>
+    </p>
+    <p>
+      <strong>Address:</strong>
+      <%= @order.address %>
+    </p>
+    <p>
+      <strong>Status:</strong>
+      <%= @order.status %>
+    </p>
+    <p>
+      <strong>Date:</strong>
+      <%= @order.created_at %>
+    </p>
+    <%= link_to 'Detail', detail_show_cart_path(cart_id: @order.cart_id) %>
+    <%= link_to 'Edit', edit_order_path(@order) %> |
+    <%= link_to 'Back', orders_path %>
+
+  </div>
+</div>

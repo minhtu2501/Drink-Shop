@@ -1,0 +1,9 @@
+{:uriI"ªfile://app/assets/bower_components/flot/examples/ajax/data-japan-gdp-growth.json?type=application/json&id=3a8c37d25981e64ddd6b6e96c2ce668a2fc63bd816f7679a7d9e26c665b43d83:ET:load_pathI" app/assets/bower_components;T:filenameI"Napp/assets/bower_components/flot/examples/ajax/data-japan-gdp-growth.json;T:	nameI"-flot/examples/ajax/data-japan-gdp-growth;T:logical_pathI"2flot/examples/ajax/data-japan-gdp-growth.json;T:content_typeI"application/json;T:sourceI"«{
+    "label": "Japan",
+    "data": [[1999, -0.1], [2000, 2.9], [2001, 0.2], [2002, 0.3], [2003, 1.4], [2004, 2.7], [2005, 1.9], [2006, 2.0], [2007, 2.3], [2008, -0.7]]
+}
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"\file-digest://app/assets/bower_components/flot/examples/ajax/data-japan-gdp-growth.json;TT:charsetI"
+utf-8;F:digest"%nâHû¨T ,£,Zãkº%ˆ¢â6`Œ§k.Þ“1:lengthi«:dependencies_digest"%ø@}±«ù@ŽçYfuž=xH‰"m–¬XÛcðÄè½î:idI"E3a8c37d25981e64ddd6b6e96c2ce668a2fc63bd816f7679a7d9e26c665b43d83;F:
+mtimel+¦ïYV

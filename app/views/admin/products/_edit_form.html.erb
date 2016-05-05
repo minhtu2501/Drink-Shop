@@ -1,0 +1,49 @@
+<%= form_for @product, url: admin_product_path do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class:"form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class:"form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price, class:"form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number, class:"form-control" %>
+  </div>
+  <div class="row">
+    <div class = "col-md-3">
+      <%= f.label :category, "Select Category:" %><br/>
+      <%= f.select :category, Category.all.map(&:name), {}, class:"form-control" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label :picture %>
+      <%= f.file_field :picture, class:"form-control" %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :deal_percent, "Deal Percent" %><br/>
+    <%= f.number_field :deal_percent, class:"form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Update Product", class:"btn btn-primary" %>
+  </div>
+<% end %>

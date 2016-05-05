@@ -1,0 +1,35 @@
+{:uriI"¢file://app/assets/bower_components/datatables-plugins/type-detection/index.html?type=text/html&id=417960c38b583d195b72c51035e67e61891ef5593c8315d9de03f1473d35bad5:ET:load_pathI" app/assets/bower_components;T:filenameI"Mapp/assets/bower_components/datatables-plugins/type-detection/index.html;T:	nameI",datatables-plugins/type-detection/index;T:logical_pathI"1datatables-plugins/type-detection/index.html;T:content_typeI"text/html;T:sourceI"]
+<h2>Type detection</h2>
+
+<p>When a DataTable is initialised, each column is scanned automatically for the type of data it contains, which in turn allows DataTables to apply the require type of sorting function. There are three built-in types (string, date and numeric) but this can readily be expanded using the functions below. This can make installed a sorting plug-in much easier since you need not specify the <a href="/usage/columns#sType">sType</a> for the column - it will be picked up automatically.</p>
+<ul>
+	<li><a href="#how_to">How to use DataTables plug-in type detection functions</a></li>
+	<li><a href="#functions">Plug-in type detection functions</a></li>
+</ul>
+
+
+<a name="how_to"></a>
+<h3>How to use DataTables plug-in type detection functions</h3>
+
+<p>To use of one of the plug-in type detections functions below, you simply need to include it and its counterpart sorting function, in the Javascript available for your page, after you load the DataTables library, but before you initialise the DataTable. Then all you need to do is initialise the DataTable and the type will be automatically detected. As an example the code below makes use of the <a href="#numeric_comma">numeric comma</a> type detection and sorting functions, saved into two different files for clarity (<a href="/examples/plug-ins/sorting_plugin.html">live example</a>):</p>
+
+<pre class="brush: html">&lt;script type="text/javascript" src="jquery.dataTables.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="dataTables.numericCommaSort.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="dataTables.numericCommaTypeDetect.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+	$(document).ready(function() {
+		$('#example').dataTable();
+	} );
+&lt;/script&gt;
+</pre>
+				
+				
+<a name="functions"></a>
+<h3>Plug-in type detection functions</h3>
+
+include(`build.1.inc')
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"[file-digest://app/assets/bower_components/datatables-plugins/type-detection/index.html;TT:charsetI"
+utf-8;F:digest"%<ÃŠ—²¦LãóßŸÑIŸ’:£t2£R¯Ú…u¶¨:lengthi]:dependencies_digest"%˜§Ö->Ã=/È§]‘€éœƒxæ—›]iw:idI"E417960c38b583d195b72c51035e67e61891ef5593c8315d9de03f1473d35bad5;F:
+mtimel+¦ïYV

@@ -1,0 +1,26 @@
+<h1>Listing Order Items</h1>
+
+<table>
+  <tr>
+    <th>Unit price</th>
+    <th>Product</th>
+    <th>Cart</th>
+    <th>Quantity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @order_items.each do |order_item| %>
+  <tr>
+    <td><%= order_item.unit_price %></td>
+    <td><%= order_item.product_id %></td>
+    <td><%= order_item.cart_id %></td>
+    <td><%= order_item.quantity %></td>
+    <td><%= link_to 'Show', user_order_item_path(order_item) %></td>
+    <td><%= link_to 'Edit', edit_user_order_item_path(order_item) %></td>
+    <td><%= link_to 'Destroy', user_order_item_path(order_item), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+

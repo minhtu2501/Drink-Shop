@@ -1,0 +1,41 @@
+<%= form_for (@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.hidden_field :cart_id, value: @order.cart_id if @order.present? %>
+  </div>
+
+  <div class="field">
+    <%= f.label :custome_name %><br>
+    <%= f.text_field :custome_name, class:'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, class:'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br>
+    <%= f.number_field :mobile, class:'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address, class:'form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status, class:'form-control' %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Edit Order", class:'btn btn-primary' %>
+  </div>
+<% end %>

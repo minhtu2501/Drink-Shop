@@ -1,0 +1,506 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap_sb_admin_base_v2
+ *= require_tree .
+ *= require_self
+ */
+
+ *{
+	margin: 0;
+	padding: 0;
+}
+
+
+h1, h2{
+	text-align: center;
+}
+
+div#wrapper-page{
+	margin-top: 40px;
+}
+
+div#welcome{
+	text-align: center;
+}
+
+#new_session{
+	text-align: center;
+	background-color: #999; 
+}
+
+#nav {
+  width: 100%;
+  height: 40px;
+  background: #000;
+  position: fixed;
+  float: left;
+  z-index: 9999;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#nav span {
+    color: #fff;
+    position: absolute;
+    margin-left: 19%;
+    line-height: 40px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#logo {
+    margin: 0px auto;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+#cart {
+    width: 300px;
+    right: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-size: 13px;
+}
+
+body, a {
+    font-family: helvetica;
+    letter-spacing: 1px;
+}
+
+
+#searchf {
+    width: 12.5%;
+    height: 24px;
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    margin: 7px 0 0 4%;
+    padding-left: 8px;
+    font-size: 11px;
+    float: left;
+    position: absolute;
+}
+
+#search_btn {
+    border: 0;
+    background: #000;
+    padding-top: 2px;
+    margin: 8px 0 0 14.7%;
+    float: left;
+    color: #fff;
+    position: absolute;
+}
+
+#sign_in, #sign_up {
+    color: #fff;
+    text-decoration: none;
+    font-size: 9px;
+}
+
+#page_nav{
+	margin-left: 5%;
+}
+
+#index_n {
+    position: absolute;
+    margin: 50px 0 0 100px;
+    top: 40px;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+#index_n ul li {
+    list-style: none;
+    float: left;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#products_wrap {
+    width: 80%;
+    float: left;
+    margin: 0 0 0 10%;
+}
+
+#products_wrap h1 {
+    width: 100%;
+    padding: 20px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    color: #667385;
+    font-size: 30px;
+    margin: 50px 0 0 0;
+}
+
+#first {
+    width: 16%;
+    height: 400px;
+    box-sizing: border-box;
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+#product_list {
+    width: 84%;
+    float: left;
+    margin: 25px 0 0 0;
+}
+
+#product_list li {
+    list-style: none;
+    width: 24%;
+    margin: 0 0 40px 1%;
+    border: 1px solid #efefef;
+    box-sizing: border-box;
+    float: left;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#show_product {
+    width: 70%;
+    float: left;
+    margin: 40px 0 0 15%;
+}
+#show_product h1 {
+    width: 100%;
+    padding: 10px;
+    background: #efefef;
+    margin: 50px 0 20px 0;
+    color: #667385;
+}
+
+#main_img {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+/*
+#show_content {
+    width: 75%;
+    float: left;
+}*/
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#show_product .add {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    float: left;
+    border: 1px solid #000;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+element.style {
+    width: 50%;
+    float: left;
+    height: 40px;
+    margin: 40px 0 0 0;
+}
+
+/*element.style {
+    font-weight: bold;
+    color: rgb(228, 121, 17);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 153, 0);
+}*/
+
+#nav-subnav .nav-a {
+    position: relative;
+    float: left;
+    height: 31px;
+    line-height: 33px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    padding: 0px 11px;
+}
+
+
+#nav-subnav {
+    position: relative;
+    /*display: none;*/
+    margin: 0;
+    padding: 0 9px 0 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid rgba(0,0,0,.17);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    white-space: nowrap;
+    height: 33px;
+    background: #fafafa;
+}
+
+
+
+#navbar * {
+    box-sizing: border-box;
+}
+a.nav-a, a.nav-a:link, a.nav-a:visited {
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a.nav-a:visited {
+    font-family: arial,sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+div#home_panel{
+	width: 900px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+/* slide show */
+.ticker-headline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.carousel.vertical .carousel-inner {
+  height: 100%;
+  width: auto;
+  > .item {
+    width: auto;
+    padding-right: 50px;
+    transition: 0.6s ease-in-out top;
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      transition: 0.6s ease-in-out;
+      &.next,
+      &.active.right {
+        transform: translate3d(0, 100%, 0);
+        top: 0;
+      }
+      &.prev,
+      &.active.left {
+        transform: translate3d(0, -100%, 0);
+        top: 0;
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        transform: translate3d(0, 0, 0);
+        top: 0;
+      }
+    }
+  }
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+  > .active {
+    top: 0;
+  }
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  > .next {
+    top: 100%;
+  }
+  > .prev {
+    top: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    top: 0;
+  }
+  > .active.left {
+    top: -100%;
+  }
+  > .active.right {
+    top: 100%;
+  }
+}
+
+.carousel.vertical {
+  .carousel-control {
+    left: auto;
+    width: 50px;
+    &.up {
+      top: 0;
+      right: 0;
+      bottom: 50%;
+    }
+    &.down {
+      top: 50%;
+      right: 0;
+      bottom: 0;
+    }
+    // Toggles
+    .icon-prev,
+    .icon-next,
+    .glyphicon-chevron-up,
+    .glyphicon-chevron-down {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
+    .icon-prev,
+    .glyphicon-chevron-up {
+      left: 50%;
+      margin-left: -10px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    .icon-next,
+    .glyphicon-chevron-down {
+      left: 50%;
+      margin-left: -10px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    .icon-up,
+    .icon-down {
+      width: 20px;
+      height: 20px;
+      //margin-top: -10px;
+      line-height: 1;
+      font-family: serif;
+    }
+    .icon-prev {
+      &:before {
+        content: '\2039';
+        // SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+
+      }
+    }
+    .icon-next {
+      &:before {
+        content: '\203a';
+        // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+
+      }
+    }
+  }
+}
+
+.vertical .carousel-inner {
+  height: 100%;
+  float: left;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
+.row.limit [class*="col-"]{
+  max-height: 250px;
+  overflow:hidden;
+}
