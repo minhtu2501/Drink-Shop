@@ -5,13 +5,14 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   before_save :assign_role
   has_many :products
+  has_many :comments, foreign_key: :user_id
   belongs_to :role
   ratyrate_rater
   
   validates_presence_of :name
 
   def assign_role
-	self.role = Role.find_by name: "Regular" if self.role.nil?
+	  self.role = Role.find_by name: "Regular" if self.role.nil?
   end
 
   def admin?
@@ -19,11 +20,11 @@ class User < ActiveRecord::Base
   end
 
   def seller?
-  	self.role.name == "Seller"
+    self.role.name == "Seller"
   end
 
   def regular?
-	self.role.name == "Regular"
+	  self.role.name == "Regular"
   end
 
   def guest?

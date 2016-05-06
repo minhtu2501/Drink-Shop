@@ -504,3 +504,9 @@ div#home_panel{
   max-height: 250px;
   overflow:hidden;
 }
+
+.form-comment{
+  clear: both;
+  width: 70%;
+  margin: 40px 0 0 15%;
+}

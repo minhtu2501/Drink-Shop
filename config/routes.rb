@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   
-
   post '/rate' => 'rater#create', :as => 'rate'
   scope :admin, module: 'admin' do
     root to: 'pages#index'
@@ -38,7 +37,9 @@ Rails.application.routes.draw do
 
    
     resources :categories
-    resources :products
+    resources :products do
+      resources :comments
+    end
     resources :orders
     resources :order_items
     resources :roles 

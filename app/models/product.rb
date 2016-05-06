@@ -6,6 +6,7 @@ class Product < ActiveRecord::Base
   has_many :order_items
   has_many :carts, through: :order_items
   has_many :orders, through: :carts
+  has_many :comments, foreign_key: :product_id
   before_save :default_values
   before_save :default_deal
   has_attached_file :picture, style: {show: "100x100", default_url: 'missing_:avatar.png'}
